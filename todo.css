@@ -1,0 +1,228 @@
+/* body {
+	background: #04A1BF;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.intro {
+	margin: 30px 0px;
+	font-weight: bold;
+}
+
+h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+p {
+	font-weight: 600;
+}
+
+#first {
+	margin-top: 10px;
+	color: #FFCD5D;
+}
+
+#second {
+	color: #51DF70;
+
+}
+
+#third {
+	color: #025F70;
+	margin-bottom: 30px;
+}
+
+
+#enter {
+	border: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #04A1BF;
+	background-color: #025F70;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+}
+
+#enter:hover{
+	background-color: #02798F;
+	color: #FFCD5D;
+}
+
+ul {
+	text-align: left;
+	margin-top: 20px;
+}
+
+
+li {
+	list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+li:hover {
+	background: #76CFE0;
+}
+
+li > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+input {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 5px;
+	border: none;
+}
+
+
+.done {
+	background: #51DF70 !important;
+	color: #00891E;
+}
+
+.delete {
+	display: none;
+} */
+/* Basic Style */
+body {
+	background: #fff;
+	color: #333;
+	font-family: Lato, sans-serif;
+  }
+  .container {
+	display: block;
+	width: 400px;
+	margin: 100px auto 0;
+  }
+  ul {
+	margin: 0;
+	padding: 0;
+  }
+  li * {
+	float: left;
+  }
+  li, h3 {
+	clear:both;
+	list-style:none;
+  }
+  input, button {
+	outline: none;
+  }
+  button {
+	background: none;
+	border: 0px;
+	color: #888;
+	font-size: 15px;
+	width: 60px;
+	margin: 10px 0 0;
+	font-family: Lato, sans-serif;
+	cursor: pointer;
+  }
+  button:hover {
+	color: #333;
+  }
+  /* Heading */
+  h3,
+  label[for='new-task'] {
+	color: #333;
+	font-weight: 700;
+	font-size: 15px;
+	border-bottom: 2px solid #333;
+	padding: 30px 0 10px;
+	margin: 0;
+	text-transform: uppercase;
+  }
+  input[type="text"] {
+	margin: 0;
+	font-size: 18px;
+	line-height: 18px;
+	height: 18px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-radius: 6px;
+	font-family: Lato, sans-serif;
+	color: #888;
+  }
+  input[type="text"]:focus {
+	color: #333;
+  }
+  
+  /* New Task */
+  label[for='new-task'] {
+	display: block;
+	margin: 0 0 20px;
+  }
+  input#new-task {
+	float: left;
+	width: 318px;
+  }
+  p > button:hover {
+	color: #0FC57C;
+  }
+  
+  /* Task list */
+  li {
+	overflow: hidden;
+	padding: 20px 0;
+	border-bottom: 1px solid #eee;
+  }
+  li > input[type="checkbox"] {
+	margin: 0 10px;
+	position: relative;
+	top: 15px;
+  }
+  li > label {
+	font-size: 18px;
+	line-height: 40px;
+	width: 237px;
+	padding: 0 0 0 11px;
+  }
+  li >  input[type="text"] {
+	width: 226px;
+  }
+  li > .delete:hover {
+	color: #CF2323;
+  }
+  
+  /* Completed */
+  #completed-tasks label {
+	text-decoration: line-through;
+	color: #888;
+  }
+  
+  /* Edit Task */
+  ul li input[type=text] {
+	display:none;
+  }
+  
+  ul li.editMode input[type=text] {
+	display:block;
+  }
+  
+  ul li.editMode label {
+	display:none;
+  }
